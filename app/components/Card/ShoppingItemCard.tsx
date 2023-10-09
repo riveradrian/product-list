@@ -3,6 +3,7 @@ import Image from "next/image";
 import ShoppingItemCardQuantity from "./ShoppingItemCardQuantity";
 import { Product } from "@/app/mocks/initialData";
 import DynamicTitle from "./DynamicTitle";
+import { HiOutlineTag } from "react-icons/hi2";
 
 interface IProps {
   product: Product;
@@ -10,12 +11,18 @@ interface IProps {
 }
 
 export default function ShoopingItemCard(props: IProps) {
-  const { id, title, description, image, price } = props.product;
+  const { id, title, description, image, price, tag } = props.product;
 
   return (
     <div className="flex flex-col justify-between p-4 border rounded gap-4 shadow-sm transition ease-in-out hover:scale-[1.03] duration-300">
       <div className="flex flex-col gap-4">
-        <figure>
+        <figure className="relative">
+          {tag && (
+            <div className="absolute top-0 left-0 z-10 flex items-center gap-1 py-1 px-3 m-2 bg-orange-600/80  text-slate-50 text-sm font-light rounded-md">
+              <HiOutlineTag />
+              {tag}
+            </div>
+          )}
           <Image
             className="relative"
             src={image}

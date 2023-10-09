@@ -4,6 +4,7 @@ export type Product = {
   description: string;
   price: number;
   image: string;
+  tag?: string;
 };
 
 export const mockProducts: Product[] = [
@@ -24,6 +25,7 @@ export const mockProducts: Product[] = [
     image:
       "https://cdn.shopify.com/s/files/1/0688/1755/1382/products/GreenSweatpants01.jpg?v=1675455387",
     price: 35.0,
+    tag: "sale",
   },
   {
     id: "gid://shopify/Product/7982902771734",
@@ -69,6 +71,7 @@ export const mockProducts: Product[] = [
     image:
       "https://cdn.shopify.com/s/files/1/0688/1755/1382/products/GreenLeggings03.jpg?v=1675455256",
     price: 20.0,
+    tag: "sale",
   },
   {
     id: "gid://shopify/Product/7983593947158",
@@ -96,6 +99,7 @@ export const mockProducts: Product[] = [
     image:
       "https://cdn.shopify.com/s/files/1/0688/1755/1382/products/Greyleathersneakers.jpg?v=1675447462",
     price: 1000.0,
+    tag: "sale",
   },
   {
     id: "gid://shopify/Product/7983595388950",
