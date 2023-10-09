@@ -39,16 +39,16 @@ export default function Home() {
     <main className="container mx-auto flex min-h-screen flex-col py-20 px-4">
       <div className="flex flex-col items-center mb-16 gap-2">
         <p className="text-center uppercase text-gray-400 font-semibold">
-          Estilo y Comodidad
+          Style and comfort
         </p>
-        <h2 className="text-center text-3xl font-bold text-gray-800 mb-4">
-          Descubre Tu Estilo con Nuestra Colección de Ropa
+        <h2 className="text-center capitalize text-3xl font-bold text-gray-800 mb-4">
+          Discover your style with our clothing collection
         </h2>
         <p className="text-center w-full text-gray-400 lg:w-[860px]">
-          Explora nuestra amplia gama de ropa de alta calidad diseñada para
-          brindarte estilo y comodidad sin igual. Desde elegantes trajes hasta
-          ropa casual y deportiva, tenemos todo lo que necesitas para lucir y
-          sentirte genial en cualquier ocasión.
+          Explore our wide range of high-quality clothing designed to provide
+          you with unparalleled style and comfort. From elegant suits to casual
+          and sportswear, we have everything you need to look and feel great on
+          any occasion.
         </p>
       </div>
       <div className="flex flex-col items-start justify-between gap-2 md:flex-row md:items-end">
